@@ -1,12 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
-    <div>
-      <h2>error page</h2>
-    </div>
-  )
-}
+    <section className="error-page section">
+      <h1 className="error-container">It's a dead end</h1>
 
-export default Error
+      <Link to="/">
+        <button className="btn btn-primary">Go back to home</button>
+      </Link>
+    </section>
+  );
+};
+
+export default Error;
